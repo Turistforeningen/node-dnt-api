@@ -26,11 +26,24 @@ var dnt = new DNT('My Application/1.0', 'myApiKey');
 ### getMemberFor(`object` query, `function` cb)
 
 The `getMemberFor()` method is used to get details for a given member from the
-membership register. The `query` parameter can at the moment have eith one of
-two properties:
+membership register.
+
+### query parameter
+
+The `query` parameter can at the moment have eith one of two properties:
 
 1. `sherpa_id` - which is the local user id for Sherpa 3.
 2. `medlemsnummer` which is the membership number for a given membership.
+
+### cb paramameter
+
+The callback function to this requests takes tree parameters:
+
+1. `Error` err - this is an error if the HTTP request itself failed.
+2. `number` statusCode - HTTP status code returned from the API.
+3. `object` memberData - data returned from the API.
+
+## Example
 
 ```javascript
 dnt.getMemberFor({ sherpa_id: 1234 }, function(err, statusCode, memberData) {
@@ -39,14 +52,10 @@ dnt.getMemberFor({ sherpa_id: 1234 }, function(err, statusCode, memberData) {
     console.log('Member is ' + memberData.fornavn);
   } else {
     console.error('Request failed! HTTP status code returned is ' + statusCode);
-    console.error(memberData);
+    console.error(memberData.errors);
   }
 });
 ```
-
-The `statusCode` is `200` if the request succeded without errors. For other
-staus codes the requests had some kind of error. You need to check the
-`memberData.errors` property in order to find out why the error failed.
 
 ## The MIT License (MIT)
 
