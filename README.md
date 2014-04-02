@@ -35,7 +35,7 @@ The `query` parameter can at the moment have eith one of two properties:
 1. `sherpa_id` - which is the local user id for Sherpa 3.
 2. `medlemsnummer` which is the membership number for a given membership.
 
-### cb paramameter
+### cb parameter
 
 The callback function to this requests takes tree parameters:
 
