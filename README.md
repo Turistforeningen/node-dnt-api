@@ -28,14 +28,14 @@ var dnt = new DNT('My Application/1.0', 'myApiKey');
 The `getMemberFor()` method is used to get details for a given member from the
 membership register.
 
-### query parameter
+#### query parameter
 
 The `query` parameter can at the moment have eith one of two properties:
 
 1. `sherpa_id` - which is the local user id for Sherpa 3.
 2. `medlemsnummer` which is the membership number for a given membership.
 
-### cb parameter
+#### cb parameter
 
 The callback function to this requests takes tree parameters:
 
@@ -43,7 +43,7 @@ The callback function to this requests takes tree parameters:
 2. `number` statusCode - HTTP status code returned from the API.
 3. `object` memberData - data returned from the API.
 
-## Example
+#### Example
 
 ```javascript
 dnt.getMemberFor({ sherpa_id: 1234 }, function(err, statusCode, memberData) {
