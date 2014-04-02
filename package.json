@@ -1,0 +1,43 @@
+{
+  "name": "dnt-api",
+  "version": "1.0.0",
+  "description": "Node.JS library for communicating with Turistforeningen's API",
+  "main": "lib/dnt-api.js",
+  "scripts": {
+    "build": "coffee --bare --compile --output lib/ src/*.coffee",
+    "prepublish": "coffee --bare --compile --output lib/ src/*.coffee",
+    "postpublish": "rm -rf lib",
+    "test": "./node_modules/.bin/mocha -b -c --check-leaks test/suite.coffee -R progress --compilers coffee:coffee-script/register -w",
+    "test-drone": "node_modules/.bin/mocha test/suite.coffee -R spec --compilers coffee:coffee-script/register"
+  },
+  "engines": {
+    "node": ">= 0.1.0"
+  },
+  "dependencies": {
+    "request": "2.34.0"
+  },
+  "devDependencies": {
+    "coffee-script": "1.7.1",
+    "mocha": "1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Turistforeningen/node-dnt-api.git"
+  },
+  "keywords": [
+    "hiking",
+    "trekking",
+    "api",
+    "user",
+    "membership"
+  ],
+  "author": "Hans Kristian Flaatten <hans.kristian.flaatten@turistforeningen.no>",
+  "contributors": [
+    "Ali Kaafarani <ali.kaafarani@turistforeningen.no>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Turistforeningen/node-dnt-api/issues"
+  },
+  "homepage": "https://github.com/Turistforeningen/node-dnt-api"
+}
