@@ -30,7 +30,8 @@ membership register.
 
 #### query parameter
 
-The `query` parameter can at the moment have eith one of two properties:
+The `query` parameter can at the moment have eith one, or both, of the following
+properties:
 
 1. `sherpa_id` - which is the local user id for Sherpa 3.
 2. `medlemsnummer` which is the membership number for a given membership.
