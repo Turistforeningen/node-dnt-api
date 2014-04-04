@@ -20,6 +20,9 @@ nvm install 0.10
 #nvm install 0.11
 export HOME=/home/root
 
+# Print current directory
+cd /vagrant; pwd; ls
+
 # Read secret environment variables
 DNT_CONNECT_USER=`cat ./env/DNT_CONNECT_USER`
 DNT_CONNECT_KEY=`cat ./env/DNT_CONNECT_KEY`
