@@ -15,11 +15,13 @@ npm install dnt-api --save
 
 ## Usage
 
+```javascript
+var DNT = require('dnt-api');
+```
+
 ### New API Client
 
 ```javascript
-var DNT = require('dnt-api');
-
 var dnt = new DNT('My Application/1.0', 'myApiKey');
 ```
 
