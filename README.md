@@ -3,11 +3,20 @@ DNT API![Build Status](https://drone.io/github.com/Turistforeningen/node-dnt-api
 
 Node.JS library for communicating with Turistforeningen's API.
 
-## Requires
+**Table of Contents**
+
+* [Requirements](#requirements)
+* [Installing](#installing)
+* [Usage](#usage)
+  * [Class: DNT](#class-dnt)
+    * [dnt.getMemberFor()](#dntgetmemberforobject-query-function-cb)
+    * [dnt.getAssociationsFor()](#dntgetassociationsforobject-query-function-cb)
+
+## Requirements
 
 Require Node.JS version `>= 0.10`.
 
-## Install
+## Installing
 
 ```
 npm install dnt-api --save
@@ -18,12 +27,6 @@ npm install dnt-api --save
 ```javascript
 var DNT = require('dnt-api');
 ```
-
-**Table of Contents**
-
-* [Class: DNT](#classdnt)
-* [dnt.getMemberFor()](#dntgetmemberforobject-query-function-cb)
-* [dnt.getAssociationsFor()](#dntgetassociationsforobject-query-function-cb)
 
 ### Class: DNT
 
