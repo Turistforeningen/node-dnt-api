@@ -17,6 +17,10 @@ DNT.prototype.getMemberFor = (query, cb) ->
   return cb new Error('Empty query') if not Object.keys(query).length is 0
   @exec 'medlem', query, cb
 
+DNT.prototype.getAssociationsFor = (query, cb) ->
+  return cb new Error('Empty query') if not Object.keys(query).length is 0
+  @exec 'forening', query, cb
+
 DNT.prototype.exec = (endpoint, params, cb) ->
   params.autentisering = @key
 

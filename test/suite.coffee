@@ -72,7 +72,7 @@ describe '#getMemberFor()', ->
       assert.equal status, 404
       assert.deepEqual body,
         errors: [
-          message: "A member matching that sherpa_id, memberid, or both if both were provided, does not exist."
+          message: "A member matching that 'sherpa_id', 'medlemsnummer', or both if both were provided, does not exist."
           code: 4
         ]
       done()
@@ -89,5 +89,40 @@ describe '#getMemberFor()', ->
           message: "You need to accept one of the following API versions in your media type: v0, v1"
           code: 2
         ]
+      done()
+
+describe '#getAssociationsFor()', ->
+  it 'should get associations for sherpa id', (done) ->
+    @timeout 10000
+
+    dnt.getAssociationsFor bruker_sherpa_id: 10142, (err, status, body) ->
+      assert.ifError err
+
+      assert.equal status, 200
+      assert body instanceof Array
+      assert body.length > 0
+
+      assert.equal typeof body[0].sherpa_id, 'number'
+      assert.equal typeof body[0].gruppetype, 'string'
+      assert.equal typeof body[0].type, 'string'
+      assert.equal typeof body[0].navn, 'string'
+
+      done()
+
+  it 'should get associations for membership number', (done) ->
+    @timeout 10000
+
+    dnt.getAssociationsFor bruker_medlemsnummer: 1692762, (err, status, body) ->
+      assert.ifError err
+
+      assert.equal status, 200
+      assert body instanceof Array
+      assert body.length > 0
+
+      assert.equal typeof body[0].sherpa_id, 'number'
+      assert.equal typeof body[0].gruppetype, 'string'
+      assert.equal typeof body[0].type, 'string'
+      assert.equal typeof body[0].navn, 'string'
+
       done()
 
