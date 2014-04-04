@@ -25,7 +25,7 @@ var DNT = require('dnt-api');
 var dnt = new DNT('My Application/1.0', 'myApiKey');
 ```
 
-### getMemberFor(`object` query, `function` cb)
+### dnt.getMemberFor(`object` query, `function` cb)
 
 The `getMemberFor()` method is used to get details for a given member from the
 membership register.
@@ -60,7 +60,7 @@ dnt.getMemberFor({ sherpa_id: 1234 }, function(err, statusCode, memberData) {
 });
 ```
 
-### getAssociationsFor(`object` query, `function` cb)
+### dnt.getAssociationsFor(`object` query, `function` cb)
 
 The `getAssociationsFor()` method is used to get associations (NO foreninger)
 for a given member from the membership register.
