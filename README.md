@@ -19,7 +19,13 @@ npm install dnt-api --save
 var DNT = require('dnt-api');
 ```
 
-### New API Client
+**Table of Contents**
+
+* [Class: DNT](#classdnt)
+* [dnt.getMemberFor()](#dntgetmemberforobject-query-function-cb)
+* [dnt.getAssociationsFor()](#dntgetassociationsforobject-query-function-cb)
+
+### Class: DNT
 
 ```javascript
 var dnt = new DNT('My Application/1.0', 'myApiKey');
