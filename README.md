@@ -41,7 +41,7 @@ membership register.
 
 #### query parameter
 
-The `query` parameter can at the moment have eith one, or both, of the following
+The `query` parameter can at the moment have either one, or both, of the following
 properties:
 
 1. `sherpa_id` - which is the local user id for Sherpa 3.
@@ -76,7 +76,7 @@ for a given member from the membership register.
 
 #### query parameter
 
-The `query` parameter can at the moment have eith one, or both, of the following
+The `query` parameter can at the moment have either one, or both, of the following
 properties:
 
 1. `bruker_sherpa_id` - which is the local user id for Sherpa 3.
