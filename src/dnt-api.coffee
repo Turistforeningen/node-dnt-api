@@ -1,7 +1,7 @@
 request = require 'request'
 qs = require 'querystring'
 
-API_URL = 'https://www.turistforeningen.no/api'
+API_URL = 'https://www.dnt.no/api'
 
 DNT = (client, key, opts) ->
   throw new Error('Client name is not defined') if not client
