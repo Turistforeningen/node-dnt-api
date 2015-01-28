@@ -1,4 +1,4 @@
-DNT API![Build Status](https://drone.io/github.com/Turistforeningen/node-dnt-api/status.png)
+DNT API ![Build Status](https://drone.io/github.com/Turistforeningen/node-dnt-api/status.png)
 ===========
 
 Node.JS library for communicating with Turistforeningen's API.
