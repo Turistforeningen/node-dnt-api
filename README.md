@@ -107,3 +107,4 @@ dnt.getAssociationsFor({ bruker_sherpa_id: 1234 }, function(err, statusCode, ass
 ```
 
 ## [MIT Licensed](https://github.com/Turistforeningen/node-dnt-api/blob/master/LICENSE)
+
