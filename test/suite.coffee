@@ -33,7 +33,7 @@ describe 'new DNT()', ->
 
 describe '#getMemberFor()', ->
   it 'should return error message for invalid API key', (done) ->
-    @timeout 10000
+    @timeout 20000
     dnt = new DNT(client, 'IjA1ChOTDZjWxRwU/DBZTw==')
 
     dnt.getMemberFor sherpa_id: 10142, (err, status, body) ->
@@ -47,7 +47,7 @@ describe '#getMemberFor()', ->
       done()
 
   it 'should get member for sherpa id', (done) ->
-    @timeout 10000
+    @timeout 20000
 
     dnt.getMemberFor sherpa_id: 10142, (err, status, body) ->
       assert.ifError err
@@ -56,7 +56,7 @@ describe '#getMemberFor()', ->
       done()
 
   it 'should get member for membership number', (done) ->
-    @timeout 10000
+    @timeout 20000
 
     dnt.getMemberFor medlemsnummer: 1692762, (err, status, body) ->
       assert.ifError err
@@ -65,7 +65,7 @@ describe '#getMemberFor()', ->
       done()
 
   it 'should handle missing member gracefully', (done) ->
-    @timeout 10000
+    @timeout 20000
 
     dnt.getMemberFor medlemsnummer: 1337, (err, status, body) ->
       assert.ifError err
@@ -78,7 +78,7 @@ describe '#getMemberFor()', ->
       done()
 
   it 'should handle invalid API version gracefully', (done) ->
-    @timeout 10000
+    @timeout 20000
     dnt = new DNT client, process.env.DNT_CONNECT_KEY, version: '99'
 
     dnt.getMemberFor medlemsnummer: 1692762, (err, status, body) ->
@@ -93,7 +93,7 @@ describe '#getMemberFor()', ->
 
 describe '#getAssociationsFor()', ->
   it 'should get associations for sherpa id', (done) ->
-    @timeout 10000
+    @timeout 20000
 
     dnt.getAssociationsFor bruker_sherpa_id: 10142, (err, status, body) ->
       assert.ifError err
@@ -110,7 +110,7 @@ describe '#getAssociationsFor()', ->
       done()
 
   it 'should get associations for membership number', (done) ->
-    @timeout 10000
+    @timeout 20000
 
     dnt.getAssociationsFor bruker_medlemsnummer: 1692762, (err, status, body) ->
       assert.ifError err
