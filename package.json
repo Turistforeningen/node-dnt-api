@@ -7,8 +7,8 @@
     "build": "./node_modules/.bin/coffee --bare --compile --output lib/ src/*.coffee",
     "prepublish": "./node_modules/.bin/coffee --bare --compile --output lib/ src/*.coffee",
     "postpublish": "rm -rf lib",
-    "test": "./node_modules/.bin/mocha -b -c --check-leaks test/suite.coffee -R progress --compilers coffee:coffee-script/register -w",
-    "test-drone": "node_modules/.bin/mocha test/suite.coffee -R spec --compilers coffee:coffee-script/register"
+    "test": "node_modules/.bin/mocha test/suite.coffee -R spec --compilers coffee:coffee-script/register",
+    "watch": "./node_modules/.bin/mocha -b -c --check-leaks test/suite.coffee -R progress --compilers coffee:coffee-script/register -w"
   },
   "engines": {
     "node": ">= 0.1.0"
