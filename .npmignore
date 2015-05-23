@@ -1,7 +1,12 @@
+# dotfiles
+*.swo
+*.swp
+.DS_Store
+.env
+
 src/
 test/
+node_modules/
 npm-debug.log
-.vagrant/
-Vagrantfile
-node_modules
-*.swp
+docker-compose.yml
+wercker.yml
