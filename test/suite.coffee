@@ -107,6 +107,7 @@ describe '#getAssociationsFor()', ->
       assert.equal typeof body[0].sherpa_id, 'number'
       assert.equal typeof body[0].gruppetype, 'string'
       assert.equal typeof body[0].type, 'string'
+      assert.equal typeof body[0].object_id, 'string'
       assert.equal typeof body[0].navn, 'string'
 
       done()
@@ -124,7 +125,7 @@ describe '#getAssociationsFor()', ->
       assert.equal typeof body[0].sherpa_id, 'number'
       assert.equal typeof body[0].gruppetype, 'string'
       assert.equal typeof body[0].type, 'string'
+      assert.equal typeof body[0].object_id, 'string'
       assert.equal typeof body[0].navn, 'string'
 
       done()
-
