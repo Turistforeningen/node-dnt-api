@@ -31,7 +31,7 @@ DNT.prototype.exec = (endpoint, params, cb) ->
       "Accept": "application/vnd.turistforeningen#{@version}"
       "User-Agent": @client
   , (err, res, body) ->
-    cb err, res.statusCode, body
+    cb err, res?.statusCode, body
 
 module.exports = DNT
 
