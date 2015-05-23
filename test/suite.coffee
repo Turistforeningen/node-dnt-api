@@ -104,11 +104,11 @@ describe '#getAssociationsFor()', ->
       assert body instanceof Array
       assert body.length > 0
 
-      assert.equal typeof body[0].sherpa_id, 'number'
-      assert.equal typeof body[0].gruppetype, 'string'
-      assert.equal typeof body[0].type, 'string'
-      assert.equal typeof body[0].object_id, 'string'
-      assert.equal typeof body[0].navn, 'string'
+      assert.equal typeof body[1].sherpa_id, 'number'
+      assert.equal typeof body[1].gruppetype, 'string'
+      assert.equal typeof body[1].type, 'string'
+      assert.equal typeof body[1].object_id, 'string'
+      assert.equal typeof body[1].navn, 'string'
 
       done()
 
@@ -122,10 +122,10 @@ describe '#getAssociationsFor()', ->
       assert body instanceof Array
       assert body.length > 0
 
-      assert.equal typeof body[0].sherpa_id, 'number'
-      assert.equal typeof body[0].gruppetype, 'string'
-      assert.equal typeof body[0].type, 'string'
-      assert.equal typeof body[0].object_id, 'string'
-      assert.equal typeof body[0].navn, 'string'
+      assert.equal typeof body[1].sherpa_id, 'number'
+      assert.equal typeof body[1].gruppetype, 'string'
+      assert.equal typeof body[1].type, 'string'
+      assert.equal typeof body[1].object_id, 'string'
+      assert.equal typeof body[1].navn, 'string'
 
       done()
