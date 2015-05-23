@@ -11,7 +11,8 @@
     "watch": "./node_modules/.bin/mocha -b -c --check-leaks test/suite.coffee -R progress --compilers coffee:coffee-script/register -w"
   },
   "engines": {
-    "node": ">= 0.1.0"
+    "node": ">= 0.1.0",
+    "iojs": ">= 1.0.0"
   },
   "dependencies": {
     "request": "2.34.0"
