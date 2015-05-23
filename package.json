@@ -15,11 +15,11 @@
     "iojs": ">= 1.0.0"
   },
   "dependencies": {
-    "request": "2.34.0"
+    "request": "~2.55"
   },
   "devDependencies": {
-    "coffee-script": "1.7.1",
-    "mocha": "1.18.2"
+    "coffee-script": "~1",
+    "mocha": "~2"
   },
   "repository": {
     "type": "git",
