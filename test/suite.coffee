@@ -72,7 +72,8 @@ describe '#getMemberFor()', ->
       assert.equal status, 404
       assert.deepEqual body,
         errors: [
-          message: "A member matching that 'sherpa_id', 'medlemsnummer', or both if both were provided, does not exist."
+          message: "A member matching that 'sherpa_id', 'medlemsnummer', or " +
+                   "both if both were provided, does not exist."
           code: 4
         ]
       done()
@@ -86,7 +87,8 @@ describe '#getMemberFor()', ->
       assert.equal status, 400
       assert.deepEqual body,
         errors: [
-          message: "You need to accept one of the following API versions in your media type: v0, v1"
+          message: "You need to accept one of the following API versions in " +
+                   "your media type: v0, v1"
           code: 2
         ]
       done()
