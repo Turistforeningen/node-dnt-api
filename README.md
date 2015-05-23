@@ -1,5 +1,9 @@
-DNT API ![Build Status](https://drone.io/github.com/Turistforeningen/node-dnt-api/status.png)
-===========
+# DNT API
+
+[![NPM downloads](https://img.shields.io/npm/dm/dnt-api.svg "NPM downloads")](https://www.npmjs.com/package/dnt-api)
+[![NPM version](https://img.shields.io/npm/v/dnt-api.svg "NPM version")](https://www.npmjs.com/package/dnt-api)
+[![Node version](https://img.shields.io/node/v/dnt-api.svg "Node version")](https://www.npmjs.com/package/dnt-api)
+[![Dependency status](https://img.shields.io/david/turistforeningen/node-dnt-api.svg "Dependency status")](https://david-dm.org/turistforeningen/node-dnt-api)
 
 Node.JS library for communicating with Turistforeningen's API.
 
