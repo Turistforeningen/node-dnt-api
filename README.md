@@ -1,5 +1,6 @@
 # DNT API
 
+[![Build status](https://img.shields.io/wercker/ci/5560c3ffbe632a8c7506994d.svg "Build status")](https://app.wercker.com/project/bykey/71e44ebc2dc79a0155f1f4ba66a42421)
 [![NPM downloads](https://img.shields.io/npm/dm/dnt-api.svg "NPM downloads")](https://www.npmjs.com/package/dnt-api)
 [![NPM version](https://img.shields.io/npm/v/dnt-api.svg "NPM version")](https://www.npmjs.com/package/dnt-api)
 [![Node version](https://img.shields.io/node/v/dnt-api.svg "Node version")](https://www.npmjs.com/package/dnt-api)
