@@ -2,11 +2,12 @@ box: wercker/nodejs
 build:
   steps:
     - npm-install
-    - npm-test
 
     - script:
-        name: code linting
+        name: npm-lint
         code: npm run lint
+
+    - npm-test
 
     - script:
         name: echo nodejs information
